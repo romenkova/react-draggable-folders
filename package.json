@@ -18,6 +18,7 @@
     "dev": "vite --config example/vite.config.ts",
     "build:example": "vite build --config example/vite.config.ts --base ./",
     "build": "vite build && tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
