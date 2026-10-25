@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "private": false,
   "license": "MIT",
+  "homepage": "https://romenkova.github.io/react-draggable-folders/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romenkova/react-draggable-folders.git"
+  },
   "type": "module",
   "sideEffects": false,
   "exports": {

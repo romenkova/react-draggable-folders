@@ -4,6 +4,8 @@ A drag-and-drop folder tree for React.
 
 React 19 · built on [@hello-pangea/dnd](https://github.com/hello-pangea/dnd)
 
+[Live example](https://romenkova.github.io/react-draggable-folders/) · [npm](https://www.npmjs.com/package/react-draggable-folders)
+
 ## Install
 
 ```sh

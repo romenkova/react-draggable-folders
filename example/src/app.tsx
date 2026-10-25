@@ -39,6 +39,12 @@ export function App() {
           <Badge href="https://github.com/hello-pangea/dnd">
             built on @hello-pangea/dnd
           </Badge>
+          <Badge href="https://www.npmjs.com/package/react-draggable-folders">
+            npm
+          </Badge>
+          <Badge href="https://github.com/romenkova/react-draggable-folders">
+            GitHub
+          </Badge>
         </div>
         <div className="mt-6">
           <InstallCommand />
