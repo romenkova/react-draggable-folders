@@ -25,7 +25,12 @@ export function useTreeDrag<I, F>(rows: TreeRow<I, F>[], options: Options) {
   const [drag, setDrag] = useState<DragUpdate | null>(null)
   const [draggingFolderId, setDraggingFolderId] = useState<string | null>(null)
   const pull = usePull(drag !== null, indentPx)
-  const rememberTops = useRowSlide(listElement, rowElements, drag !== null)
+  // A lifted folder's rows collapse before the drag starts; sliding the rows below would fight dnd.
+  const rememberTops = useRowSlide(
+    listElement,
+    rowElements,
+    drag !== null || draggingFolderId !== null
+  )
 
   const findRow = (id: string) => rows.find((row) => row.id === id)
 

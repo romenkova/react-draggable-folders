@@ -12,9 +12,7 @@ export function useRowSlide(
 
   useLayoutEffect(() => {
     if (paused || !list.current) return
-    const before = tops.current
-    tops.current = measureTops(list.current, rows.current)
-    if (before) slide(rows.current, before, tops.current)
+    tops.current = slide(list.current, rows.current, tops.current)
   })
 
   // Call right before a change to slide from where rows are on screen now.
